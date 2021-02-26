@@ -21,7 +21,6 @@ def data(country,state):
     data =list(map(operator.itemgetter('name'), response.json()))
     for x in data: 
         if state in x:
-            print(x)
             universities.append(x)
     return json.dumps(universities)
 
