@@ -2,8 +2,8 @@ import flask, sys , os , requests, time
 from flask_socketio import SocketIO
 
 data = {}
-client_id = "mpJQrBQ4l72CcxHMfI1L4ph6QyKHWd7W"
-client_secret = "6K70Vp8auhas19pVfY8TyAj2tFq-_HVkoGYgT19cxTd2-sBS5cetcU-QrMip7xWG"
+client_id = "---"
+client_secret = "----"
 scope = "SCOPE"
 grant_type="urn:ietf:params:oauth:grant-type:device_code"
 audience= "https://dev-vtnn7u9u.us.auth0.com/api/v2/"
