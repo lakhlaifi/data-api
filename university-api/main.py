@@ -31,6 +31,15 @@ def data(country,state):
 def server(country,state):
     return data(country,state)
 
+
+
+@app.route('/dog', methods=['GET'])
+@requires_auth
+@cross_origin(headers=['Content-Type', 'Authorization'])
+def dog():
+    response = "https://www.sciencemag.org/sites/default/files/styles/inline__450w__no_aspect/public/dogs_1280p_0.jpg"
+    return response
+
 @app.route('/', methods=['GET'])
 @cross_origin(headers=["Content-Type", "Authorization"])
 def home():

@@ -4,10 +4,9 @@ from functools import wraps
 from flask import request , _request_ctx_stack
 from jose import jwt
 
-AUTH0_DOMAIN = 'dev-vtnn7u9u.us.auth0.com'
-API_AUDIENCE = "university-api"
+AUTH0_DOMAIN = 'dev-xxxx.us.auth0.com'
+API_AUDIENCE = "location-api"
 ALGORITHMS = ["RS256"]
-
 
 # Error handler
 class AuthError(Exception):

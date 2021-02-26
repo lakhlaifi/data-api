@@ -26,6 +26,12 @@ def server(country,zipcode):
     print(Api)
     return data(Api)
 
+@app.route('/cat', methods=['GET'])
+@requires_auth
+@cross_origin(headers=['Content-Type', 'Authorization'])
+def cat():
+    response = "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
+    return response
 
 @app.route('/', methods=['GET'])
 @cross_origin(headers=["Content-Type", "Authorization"])
