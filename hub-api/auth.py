@@ -3,12 +3,12 @@ from flask import render_template
 
 data = {}
 client_id = "xxx"
-client_secret = "xxx"
+client_secret = "xxxx"
 scope = "SCOPE"
 grant_type="urn:ietf:params:oauth:grant-type:device_code"
 audience= "location-api"
-oauth_token_url="https://domm/oauth/token"
-auth0_url = "https://dom/oauth/device/code"
+oauth_token_url="https://dev-h-qf4jut.eu.auth0.com/oauth/token"
+auth0_url = "https://dev-h-qf4jut.eu.auth0.com/oauth/device/code"
 
 def device():
     headers = {"content-type": "application/x-www-form-urlencoded"}

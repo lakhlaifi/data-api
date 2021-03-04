@@ -4,8 +4,8 @@ from functools import wraps
 from flask import request , _request_ctx_stack
 from jose import jwt
 
-AUTH0_DOMAIN = 'dxxx.us.auth0.com'
-API_AUDIENCE = "location-api"
+AUTH0_DOMAIN = 'dev-h-qf4jut.eu.auth0.com'
+API_AUDIENCE = "sensors"
 ALGORITHMS = ["RS256"]
 
 
